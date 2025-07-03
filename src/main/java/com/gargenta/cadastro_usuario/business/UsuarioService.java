@@ -37,5 +37,7 @@ public class UsuarioService {
                         usuario.getNome() : usuarioEntity.getNome())
                 .id(usuarioEntity.getId())
                 .build();
+
+        usuarioRepository.saveAndFlush(usuarioAtualizado);
     }
 }
